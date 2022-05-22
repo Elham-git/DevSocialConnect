@@ -1,4 +1,7 @@
 {
     "MongoURI": "mongodb+srv://elham007:elham007@devsocialconnect.t000p.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
-    "jwtSecret":"mysecrettoken"
+    "jwtSecret":"mysecrettoken",
+    "githubClientID":"e13c5818c3492e5d6712",
+    "githubSecret":"eb55c143f216fec92466243ee81266766c089224"
+    
 }
