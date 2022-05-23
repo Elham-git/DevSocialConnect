@@ -1,2 +1,3 @@
 import { combineReducers } from "redux";
-export default combineReducers({ alert: null });
+import alert from "./alert";
+export default combineReducers({ alert });
