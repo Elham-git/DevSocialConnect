@@ -7,6 +7,7 @@ const { check, validationResult, body } = require("express-validator");
 const request = require("request");
 const config = require("config");
 const Post = require("../../models/Post");
+const checkObjectId = require("../../middleware/checkObjectId");
 
 //@route    GET api /profile/me
 //@desc     Get current users profile
