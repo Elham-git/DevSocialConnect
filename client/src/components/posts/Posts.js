@@ -14,7 +14,7 @@ const Posts = ({ getPosts, post: { posts, loading } }) => {
   return loading ? (
     <Spinner />
   ) : (
-    <Fragment className="container">
+    <section className="container">
       <h1 className="large text-primary">Posts</h1>
       <p className="lead">
         <i className="fas fa-user" /> Welcome to the community
@@ -25,7 +25,7 @@ const Posts = ({ getPosts, post: { posts, loading } }) => {
           <PostItem key={post._id} post={post} />
         ))}
       </div>
-    </Fragment>
+    </section>
   );
 };
 

@@ -22,7 +22,7 @@ const CommentItem = ({
     <div>
       <p className="my-1">{text}</p>
       <p className="post-date">
-        Posted on <Moment format="YYYY/MM/DD"></Moment>
+        Posted on <Moment format="YYYY/MM/DD">{date}</Moment>
       </p>
       {!auth.loading && user === auth.user._id && (
         <button
@@ -38,7 +38,7 @@ const CommentItem = ({
 );
 
 CommentItem.propTypes = {
-  postId: PropTypes.string.isRequired,
+  postId: PropTypes.number.isRequired,
   comment: PropTypes.object.isRequired,
   auth: PropTypes.object.isRequired,
   deleteComment: PropTypes.func.isRequired,
